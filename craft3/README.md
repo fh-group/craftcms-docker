@@ -1,6 +1,12 @@
 
 # Docker compose setup for CraftCMS beta 3
 
+## TODO - Production
+* Build pipeline
+* S3 Setup
+* DB Setup
+* Production Dockerfile
+
 ## Prerequisites
 * Docker
 * Docker compose
