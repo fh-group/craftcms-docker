@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir source
-docker-compose run fpm3 composer create-project craftcms/craft /app -s beta
+docker-compose run fpm3 composer create-project craftcms/craft /app
 
 shastring=$(echo -n password | shasum -a 1 | awk '{print $1}')
 

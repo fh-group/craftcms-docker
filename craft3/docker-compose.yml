@@ -26,6 +26,8 @@ services:
             - db3
     db3:
         image: mysql:5.5
+        volumes:
+            - mysql:/var/lib/mysql
         environment:
             MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
             MYSQL_DATABASE: 'craft'
@@ -36,3 +38,6 @@ services:
 
 networks:
     craft3:
+
+volumes:
+    mysql:
